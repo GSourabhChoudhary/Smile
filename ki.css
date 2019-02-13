@@ -1,0 +1,17 @@
+ a:link{
+background-color:#f44336;
+color:orange;
+padding:14px25px;
+text-align:center;
+text-decoration:none;
+display:inline-block;
+}
+a:hover
+{
+	background-color:green;
+}
+
+a:visited{
+color:brown;
+}
+
