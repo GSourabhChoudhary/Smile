@@ -1,0 +1,42 @@
+h1
+{
+background-color:yellow;
+margin-left:20px;
+width:50%;
+}
+p,h1
+{
+color:red;
+}
+p
+{
+border:4px dotted;
+width:200px;
+border:25px solid navy;
+}
+#para1
+{
+margin-left:25px;
+margin-right:25px;
+margin-top:50px;
+margin-bottom:50px;
+color:aqua;
+border:10px solid;
+border-color:green;
+}
+r1.colortext
+{
+color:orange;
+}
+*
+{
+background-color:gray;
+}
+body
+{
+background-image:url("/home/itsec3/2016cse193/Been.png");
+background-repeat:repeat-y;
+height: 100%;
+background-position:top right;
+}
+ 
