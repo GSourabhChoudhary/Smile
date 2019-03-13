@@ -1,0 +1,27 @@
+<html>
+<head>
+<title>Hello...</title>
+<script>
+function display()
+{
+var a=document.getElementById("fname").value;
+var b=document.getElementById("age").value;
+var c=document.getElementById("lname").value;
+document.write(a)
+document.write(b)
+document.write(c)
+}
+</script>
+</head>
+<body>
+<form onsubmit=display() id="form">
+<label>enter fname</label>
+<input type "text" id="fname">
+<label>enter age</label>
+<input type "text" id="age">
+<label>enter lname</label>
+<input type "text" id="lname">
+<input type=submit>
+</form>
+</body>
+</html>

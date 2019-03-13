@@ -1,0 +1,45 @@
+<html>
+<head>
+<script>
+function nclick()
+{
+document.getElementById("fd").innerHTML="HELLO WORLD";
+}
+
+function ov()
+{
+document.getElementById("fb").innerHTML="ok now move ";
+}
+function ou()
+{
+document.getElementById("fb").innerHTML="place your cursor here";
+}
+function sum(a,b)
+{
+var c=+a + +b;
+document.getElementById("f").innerHTML=c;
+}
+</script>
+</head>
+<body>
+<form>
+<input type="button" onclick="nclick()" value="clickme" >
+</form>
+<div id="fd" style="width:300px;height:200px;background-color:aqua;">
+hello
+</div>
+<br/>
+<br/>
+<br/>
+<div id="fb" onmouseover="ov()" onmouseout="ou()" >
+here
+</div>
+<br/>
+<br/>
+<br/>
+<input type=button onclick="sum(5,6)" value="sum">
+<div id="f" >
+sum
+</div>
+</body>
+</html>
