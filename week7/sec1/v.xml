@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<vechiles>
+	<car>
+		<price>1.cr</price>
+		<colour>Black</colour>
+	</car>
+	<bike>
+		<price>10.lack</price>
+		<colour>red</colour>
+	</bike>
+</vechiles>
+

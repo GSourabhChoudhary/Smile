@@ -1,0 +1,86 @@
+<html>
+<head>
+<title>Form...</title>
+<script>
+function validation()
+{
+var username=document.forms["Formssss"]["username"];
+var address=document.forms["Formssss"]["address"];
+var psw=document.forms["Formssss"]["psw"];
+var email=document.forms["Formssss"]["email"];
+var telephone=document.forms["Formssss"]["telephone"];
+var sub=document.forms["Formssss"]["Course"];
+if (username.value == "")
+{
+ window.alert("Please enter a valid username.");
+ username.focus();
+ return false;
+}
+if (telephone.value == "")
+{
+ window.alert("Please enter a valid Telephone-Number.");
+ telephone.focus();
+ return false;
+}
+if (address.value == "")
+{
+ window.alert("Please enter a valid address.");
+ address.focus();
+ return false;
+}
+if (email.value.indexOf("@",0)<0)
+{
+ window.alert("Please enter a valid E-mail address.");
+ email.focus();
+ return false;
+}
+if (email.value.indexOf(".",0)<0)
+{
+ window.alert("Please enter a valid E-mail address.");
+ email.focus();
+ return false;
+}
+if (psw.value == "")
+{
+ window.alert("Please enter a valid password.");
+ psw.focus();
+ return false;
+}
+if (sub.selectIndex < 1)
+{
+ window.alert("Please select your course.");
+ sub.focus();
+ return false;
+}
+return true;
+}
+</script>
+</head>
+<body>
+<center><h1>
+<p>Registration Form</p> </h1>
+<form name="Formssss" onsubmit="return validation()" method="post">
+  User name:<br>
+  <input type="text" name="username"><br>
+  Address:<br>
+  <input type="text" name="address"><br>
+  User password:<br>
+  <input type="password" name="psw"><br>
+  E-mail:<br>
+  <input type="email" name="email" autocomplete="off"><br>
+  Telephone:<br>
+  <input type="text" name="telephone"><br>
+  Select the course:
+  <select name="Course" size=1 >
+  <option value="English">ENG</option>
+  <option value="Math">MAT</option>
+  <option value="Bio">BIO</option>
+  <option value="Phy">phy</option>
+  </select><br> 
+  <br>
+  <input type="submit" value="SET"> 
+<input type="reset" value="RESET">
+</form> 
+</body>
+</html>
+

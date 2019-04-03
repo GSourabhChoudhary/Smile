@@ -1,0 +1,93 @@
+<html>
+<head>
+<script type="text/javascript">
+
+            function argiments()
+            {
+                var i=0,sum=0;
+                for(i=0;i<arguments.length;i++)
+                {
+                    sum+=arguments[i];
+                }
+                document.getElementById("fd").innerHTML=sum;   
+            }
+           
+            function sorting()
+            {
+                var b=arguments.length,l;
+                var a=new Array(b);
+               
+                var i=0,j=0,temp,k=0;
+                for(l=0;l<b;l++)
+                {
+                    a[l]=arguments[l];               
+                }
+                for(i=0;i<a.length;i++)
+                {
+                        for(j=i+1;j<a.length;j++)
+                        {
+                                if(a[i]>a[j])
+                                {
+                                    temp=a[i];
+                                    a[i]=a[j];
+                                    a[j]=temp;
+                                }
+                        }
+                }
+                for(k=0;k<a.length;k++)
+                {
+                    document.getElementById("sd").innerHTML+=a[k]+ "<br>";   
+                }               
+            }
+              
+            function searching()
+            {
+                    var a=new Array(5);
+                    var i=0;
+                    for(i=0;i<a.length;i++)
+                    {
+                            a[i]=prompt("Enter the value: ");
+                    }
+                    var d=a.indexOf("5");
+                    if(d<0)
+                    {
+                        document.getElementById("td").innerHTML="Element not found";
+                    }
+                    else
+                    {
+                        document.getElementById("td").innerHTML="Element found in"+ " " +d;
+                    }
+                    document.getElementById("td").innerHTML+="<br> <br>"+a;
+            }
+</script>
+
+
+<link rel="stylesheet" type="text/css" href="3div.css">
+
+
+<title>Sample</title>
+</head>
+
+<body>
+            <input type=button onclick=argiments(5,6,7,8,9,10) value=Sum_of_numbers><br>
+            <input type=button onclick=sorting(1,7,5,8,4,9,2,3) value=sorting_of_numbers><br>
+            <input type=button onclick=searching() value=searcing_for_a_number><br>
+
+            <div class=div1 id=fd>
+   
+   
+            </div>
+
+            <div class=div2 id=sd>
+   
+   
+            </div>
+
+            <div class=div3 id=td>
+   
+   
+            </div>
+</body>
+</html>
+
+

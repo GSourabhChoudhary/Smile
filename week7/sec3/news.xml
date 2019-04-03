@@ -1,0 +1,5 @@
+<root xmlns:h="highSkool"
+xmlns:m="medskool">
+<h:subject>GEO</h:subject>
+<m:subject>BIO</m:subject>
+</root>

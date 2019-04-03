@@ -1,0 +1,6 @@
+<!DOCTYPE book
+[	<!ENTITY writer "SRP">
+	<!ENTITY nbsp "#160">
+	<!ENTITY title "IT Java CP">
+]>
+<book> &writer;&nbsp;&title;</book>

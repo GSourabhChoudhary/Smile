@@ -1,0 +1,10 @@
+<!DOCTYPE student SYSTEM "C:\home\itsec3\2016cse193\dt.dtd">
+<student>
+	<name>Sunil</name>
+	<address>BLR</address>
+	<std>12th</std>
+	<marks>91</marks>
+	<rank>1st</rank>
+</student>
+
+

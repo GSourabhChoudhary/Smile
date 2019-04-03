@@ -1,0 +1,40 @@
+#fd{
+    height:200px;
+    width:200px;
+    margin-left:60px;
+    /*margin-right:900px;
+    margin-bottom:700px;*/
+    margin-top:50px;
+    background-color:lightblue;
+    float:left;
+}
+
+#sd{
+    height:200px;
+    width:200px;
+    margin-left:60px;
+    /*margin-right:900px;
+    margin-bottom:50px; */
+    margin-top:50px;
+    background-color:lightblue;
+    float:left;
+}
+
+#td{
+    height:200px;
+    width:200px;
+    margin-left:750px;
+    /*margin-right:900px;
+    margin-bottom:70px;*/
+    margin-top:50px;
+    background-color:lightblue;
+   
+}
+
+body{
+   
+}
+
+
+
+

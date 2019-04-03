@@ -1,0 +1,50 @@
+<html>
+<body>
+<p>Math.PI:</p>
+<p id="pi"></p>
+<p>Math.round(x):</p>
+<p id="round"></p>
+<p>Math.pow(x,y):</p>
+<p id="pow"></p>
+<p>Math.sqrt(x):</p>
+<p id="sqrt"></p>
+<p>Math.abs(x):</p>
+<p id="abs"></p>
+<p>Math.ceil():</p>
+<p id="ceil"></p>
+<p>Math.floor(x):</p>
+<p id="floor"></p>
+<p>Math.sin(x):</p>
+<p>Angle in radians = (angle in degrees) * PI / 180.</p>
+<p id="sin"></p>
+<p>Math.cos(x):</p>
+<p>Angle in radians = (angle in degrees) * PI / 180.</p>
+<p id="cos"></p>
+<p>Math.min():</p>
+<p id="min"></p>
+<p>Math.max()</p>
+<p id="max"></p>
+<p>Math.random() returns a random number between 0 and 1:</p>
+<p id="random"></p>
+
+
+
+<script>
+document.getElementById("pi").innerHTML = Math.PI;
+document.getElementById("round").innerHTML = Math.round(4.4);
+document.getElementById("pow").innerHTML = Math.pow(8,2);
+document.getElementById("sqrt").innerHTML = Math.sqrt(64);
+document.getElementById("abs").innerHTML = Math.abs(-4.4);
+document.getElementById("ceil").innerHTML = Math.ceil(4.4);
+document.getElementById("floor").innerHTML = Math.floor(4.7);
+document.getElementById("sin").innerHTML = "The sine value of 90 degrees is " + Math.sin(90 * Math.PI / 180);
+document.getElementById("cos").innerHTML = "The cosine value of 0 degrees is " + Math.cos(0 * Math.PI / 180);
+document.getElementById("min").innerHTML =Math.min(0, 150, 30, 20, -8, -200);
+document.getElementById("max").innerHTML =Math.max(0, 150, 30, 20, -8, -200);
+document.getElementById("random").innerHTML = Math.random();
+
+</script>
+</body>
+</html>
+
+
