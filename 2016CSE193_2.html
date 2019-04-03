@@ -1,0 +1,134 @@
+<html>
+<head>
+<script>
+function validation()
+{
+var name=document.getElementById("Name").value;
+var vehiclenumber=document.getElementById("VehicleNumber").value;
+var service=document.getElementById("Service").value;
+var kilometer=document.getElementById("KilometerDriven").value;
+var Slocations=document.getElementById("SLocations").value;
+if(name=="")
+{
+alert("Please enter your name");
+return false;
+}
+else
+{
+for(i=0;i<name.length;i++)
+if(!((name.charAt(i)>='a'&&nameAt(i)<='z'||(name.charAt(i)>='A'&&nameAt(i)<='Z')))
+{
+alert("enter alpphabets only in the name field");
+return false;
+}
+}
+if(name.length<8)
+{
+alert("username length should be greater than 8");
+retuen false;
+}
+if(vehiclenumber=="")
+{
+alert("Please enter your vehiclenumber");
+return false;
+}
+else
+{
+for(i=0;i<(vehiclenumber-4).length;i++)
+if(!((name.charAt(i)>='a'&& name.charAt(i)<='z'||(name.charAt(i)>='A'&&nameAt(i)<='Z')))
+{
+alert("enter alpphabets only in the starting in vehiclenumber field");
+return false;
+}
+else
+{
+for(i=0;i<vehiclenumber.length;i++)
+if(!(name.charAt(i)>='0'&& name.charAt(i)<='9'))
+{
+alert("Please enter valid userId");
+return false;
+}
+}
+}
+if(service=="")
+{
+alert("Please enter the prefered service");
+return false;
+}
+if(kilometer=="")
+{
+alert("Please enter the kilometerDriven");
+return false;
+}
+else
+{
+if(kilometer.length<4 || kilometer==0000)
+{
+alert("Please enter the kilometerDriven");
+retuen false;
+}
+}
+if(Slocations=="")
+{
+alert("Please enter prefered Slocations");
+return false;
+}
+</script>
+</head>
+<body>
+<center>
+<table border="0" bgcolor="green">
+<form name="RegistrationPage" action="2016CSE193_3.html.php" method="post" onsubmit="retuen validateForm()">
+<tr>
+<td height="28" align="right">Name:&nbsp;</td>
+<td height="28"><input type ="text" id="name" size="25"/></td>
+</tr>
+
+<tr>
+<td height="28" align="right">VehicleNumber:&nbsp;</td>
+<td height="28"><input type ="text" id="vehiclenumber" size="25"/></td>
+</tr>
+
+<tr>
+<td height="28" align="right">Service:&nbsp;</td>
+<td height="28"><input type ="radio" id="service" value="free" name="Service">Free
+<input type ="radio" id="service" value="paid" name="Service">Paid</td>
+</tr>
+
+<tr>
+<td height="28" align="right">kilometerDriven:&nbsp;</td>
+<td height="28"><input type ="text" id="kilometer" size="25"/></td>
+</tr>
+
+<tr>
+<td height="28" align="right">SLocations:&nbsp;</td>
+</td>
+<td height="28">
+<select Slocation="Slocations">
+<option value="0">select</option>
+<option value="1">Kerala</option>
+<option value="2">Karnataka</option>
+<option value="3">Andrapradesh</option>
+<option value="4">Tamilnadu</option>
+</select>
+</td>
+</tr>
+
+
+<form action="2016CSE193_3.html.php">
+<fieldset>
+<ledend>Registration:</legend>
+</fieldset>
+
+<tr>
+<input type="submit" value="submit">
+</tr>
+
+</form>
+</table>
+</center>
+</body>
+</html>
+
+
+
